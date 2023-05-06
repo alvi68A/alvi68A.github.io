@@ -1,0 +1,266 @@
+/* Original menu styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  ::-webkit-scrollbar-track
+  {
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      
+      background-color: #555;
+  }
+  
+  ::-webkit-scrollbar
+  {
+      width: 12px;
+      background-color: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb
+  {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: rgb(129, 129, 129);
+  }
+  .white{
+    color:rgb(238, 238, 238);
+  }
+  .blue{
+    color:#9CEAF3;
+  }
+  a{
+    font-size:16px;
+    color:rgb(238, 238, 238);
+  }
+  body{
+    background-image: url("ubuntu.png");
+    height: 100vh;
+    font-family: Hack, monospace;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+  }
+  .container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    max-width:800px;
+    height:500px;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    margin:20px;
+    cursor: text;
+    position: relative;
+  }
+
+.download{
+    position:absolute;
+    display:none;
+    flex-direction: column;
+    width:100%;
+    max-width:800px;
+    height:500px;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    margin:20px;
+    cursor: text;
+  }
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 24px;
+    background-image: linear-gradient(#5F5D53, #3E3D39);
+    padding: 0 8px;
+  }
+
+.downloadMenu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 24px;
+    background-image: linear-gradient(#5F5D53, #3E3D39);
+    padding: 0 8px;
+}
+  
+  /* Duplicate menu styles */
+  .menu.duplicate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 24px;
+    background-image: linear-gradient(#3E3D39, #3E3D39);
+    padding: 0 8px;
+  }
+  
+  /* Button styles */
+  .menu .button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  .downloadMenu .button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  /* Button styles for duplicate menu */
+
+  .red{background-color:#DF501E;}
+  .yellow{background-color:#77766F;}
+  .green{background-color:#77766F;}
+  /* Title styles */
+
+  div.title {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Title styles for duplicate menu */
+  div.title.duplicate {
+    flex: 1;
+    text-align: left;
+  }
+  
+  /* Header styles */
+  .menu h1 {
+    font-size: 13px;
+    color: #cecece;
+  }
+  
+  /* Header styles for duplicate menu */
+  .menu.duplicate h1 {
+    font-size: 13px;
+    color: #cecece;
+  }
+  .downloadMenu h1{
+    font-size:13px;
+    color: #cecece
+  }
+  #app{
+    display:flex;
+    flex-direction: column;
+    background-color:#2D0922;
+    width:100%;
+    height:100%;
+    padding:8px;
+    overflow: auto;
+  }
+  #downloadApp {
+    display:flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    width:100%;
+    height:100%;
+    padding:8px;
+    overflow: auto;
+  }
+
+  #fileInBox {
+    width:20%;
+    height:25%;
+    display: block;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  @media (max-width:500px){
+    .buttons-flex{
+      position: unset;
+      display:flex;
+      flex-direction: row;
+    }
+  }
+  @media (max-width:330px){
+    .menu h1{
+      display:none;
+    }
+  }
+  p{
+    font-size:16px;
+    color:rgb(238, 238, 238);
+  }
+  p2{
+    font-size: 16px;
+    color:rgb(0, 0, 0);
+  }
+
+  h2{
+    font-size:16px;
+    color:rgb(238, 238, 238);
+  }
+  p.code{
+    color:#66C2CD;
+    margin-left:8px;
+  }
+  span.text{
+    margin-left:16px;
+    color:white;
+  }
+  p.path{
+    color:#85be30;
+  }
+  p.path span{
+    color:#9CEAF3;
+  }
+  p.path span + span{
+    color:white;
+  }
+  
+  .sucess{
+    color:white;
+  }
+  .error{
+    color:white;
+  }
+  p.response{
+    color:rgb(238, 238, 238);
+  }
+  
+  input{
+    border:none;
+    background-color: unset;
+    color:rgb(238, 238, 238);
+    width:100%;
+    font-size:16px;
+    font-family: 'Fira Code', monospace;
+  }
+  input:focus{
+    border:none;
+    outline: none;
+    box-shadow: none;
+    background-color: unset;
+    
+  }
+  .type{
+    display:flex;
+    align-items: center;
+    padding:8px 0;
+  }
+  .type2{
+    display:flex;
+    align-items: center;
+    padding:8px 0;
+  }
