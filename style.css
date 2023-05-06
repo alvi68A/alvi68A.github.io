@@ -163,6 +163,7 @@
     height:100%;
     padding:8px;
     overflow: auto;
+    white-space: nowrap;
   }
   #downloadApp {
     display:flex;
