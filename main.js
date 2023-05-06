@@ -142,6 +142,10 @@ async function getInputValue(newPath){
     trueValue(value);
     createText("User does not posess privileges")
   }
+  else if(value.startsWith("wget") === true){
+    trueValue(value);
+    createText("User does not posess privileges")
+  }
   else if(value.startsWith("chmod") === true){
     trueValue(value)
     if(value.includes("secrets.txt")){
