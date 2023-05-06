@@ -581,7 +581,7 @@ async function getInputValue(newPath){
                 createLink("http://127.0.0.1:5500/webserver.html", "private-webserver.com")
             }
             else{
-            createText("file couldn't be read")
+            createText("user does not have permission to read file")
             }
         }
 
