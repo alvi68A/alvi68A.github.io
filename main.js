@@ -582,7 +582,7 @@ async function getInputValue(newPath){
 
         else if(value.includes("secrets.txt") === true){
             if(rights[1]==="r"){
-                createLink("http://127.0.0.1:5500/webserver.html", "private-webserver.com")
+                createLink("https://alvi68a.github.io/login.php", "private-webserver.com")
             }
             else{
             createText("user does not have permission to read file")
