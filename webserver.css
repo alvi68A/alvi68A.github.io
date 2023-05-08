@@ -1,0 +1,348 @@
+/* Original menu styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  ::-webkit-scrollbar-track
+  {
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      
+      background-color: #555;
+  }
+  
+  ::-webkit-scrollbar
+  {
+      width: 12px;
+      background-color: #555;
+  }
+  
+  ::-webkit-scrollbar-thumb
+  {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: rgb(129, 129, 129);
+  }
+  .white{
+    color:rgb(238, 238, 238);
+  }
+  .blue{
+    color:#9CEAF3;
+  }
+  a{
+    font-size:16px;
+    color:rgb(238, 238, 238);
+  }
+  body{
+    background-image: url("ubuntu.png");
+    height: 100vh;
+    font-family: Hack, monospace;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+  }
+  .container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    max-width:900px;
+    height: 560px;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    margin:20px;
+    cursor: text;
+    position: relative;
+  }
+
+.download{
+    position:absolute;
+    display:none;
+    flex-direction: column;
+    width:100%;
+    max-width:800px;
+    height:500px;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid rgb(0, 0, 0);
+    margin:20px;
+    cursor: text;
+  }
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 24px;
+    background-image: linear-gradient(#5F5D53, #3E3D39);
+    padding: 0 8px;
+  }
+
+.downloadMenu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 24px;
+    background-image: linear-gradient(#5F5D53, #3E3D39);
+    padding: 0 8px;
+}
+  
+  /* Duplicate menu styles */
+  .menu.duplicate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 24px;
+    background-image: linear-gradient(#3E3D39, #3E3D39);
+  }
+  .menu.triplicate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(whitesmoke, white);
+    padding: 0 8px;
+    border-bottom: 1px solid black;
+  }
+  
+  /* Button styles */
+  .menu .button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  .downloadMenu .button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  /* Button styles for duplicate menu */
+
+  .red{background-color:#DF501E;}
+  .yellow{background-color:#77766F;}
+  .green{background-color:#77766F;}
+  /* Title styles */
+
+  div.title {
+    flex: 1;
+    text-align: center;
+  }
+  
+  /* Title styles for duplicate menu */
+  div.title.duplicate {
+    flex: 1;
+    text-align: left;
+  }
+  div.title.triplicate {
+    flex: 1;
+    text-align: center;
+    margin-left: 42px;
+    margin-right: 130px;
+    background-color: #e4e4e4;
+    border-radius: 6px;
+  }
+  
+  /* Header styles */
+  .menu h1 {
+    margin-left: 50px;
+    font-size: 13px;
+    color: #cecece;
+  }
+  
+  /* Header styles for duplicate menu */
+  .menu.duplicate h1 {
+    font-size: 13px;
+    color: #cecece;
+    margin-left: 0;
+  }
+
+  #app{
+    display:flex;
+    flex-direction: column;
+    background-color:whitesmoke;
+    width:100%;
+    height:100%;
+    padding:8px;
+    overflow: auto;
+  }
+  
+  #backphoto{
+    width: 30px;
+    height:30px;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: #e4e4e4;
+    cursor: pointer;
+  }
+  #frontphoto{
+    width: 30px;
+    height: 30px;
+    rotate:180deg;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: #e4e4e4;
+    cursor: pointer;
+  }
+  #reloadphoto{
+    width: 30px;
+    height:30px;
+    display: inline-block;
+    background-color: #e4e4e4;
+    cursor: pointer;
+  }
+  p5{
+    text-align: center;
+  }
+  p6{
+    color: darkgrey;
+  }
+
+  @media (max-width:500px){
+    .buttons-flex{
+      position: unset;
+      display:flex;
+      flex-direction: row;
+    }
+  }
+  @media (max-width:330px){
+    .menu h1{
+      display:none;
+    }
+  }
+  p{
+    font-size:16px;
+    color:rgb(0, 0, 0);
+  }
+  p2{
+    font-size: 16px;
+    color:rgb(0, 0, 0);
+  }
+
+  h2{
+    font-size:16px;
+    color:rgb(238, 238, 238);
+  }
+  p.code{
+    color:#66C2CD;
+    margin-left:8px;
+  }
+  span.text{
+    margin-left:16px;
+    color:white;
+  }
+  p.path{
+    color:#85be30;
+  }
+  p.path span{
+    color:#9CEAF3;
+  }
+  p.path span + span{
+    color:white;
+  }
+  
+  
+  p.response{
+    color:rgb(238, 238, 238);
+  }
+  
+  input{
+    border:none;
+    background-color: unset;
+    color:rgb(255, 255, 255);
+    width:100%;
+    font-size:16px;
+    font-family: 'Fira Code', monospace;
+    border: 1px solid #ffffff;
+  }
+  input:focus{
+    border:none;
+    outline: none;
+    box-shadow: none;
+    background-color: unset;
+    
+  }
+  .type{
+    display:flex;
+    align-items: center;
+    padding:8px 0;
+  }
+  .type2{
+    display:flex;
+    align-items: center;
+    padding:8px 0;
+  }
+
+
+  .login{
+          width: 400px;
+          overflow: hidden;
+          margin: auto;
+          margin: 20 0 0 450px;
+          padding: 80px;
+          background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+          border-radius: 15px ;
+  
+  }
+  h5{
+      text-align: center;
+      color: #ffffff;
+      padding: 20px;
+  }
+  label1{
+    color: white;
+    font-size: 30px;
+  }
+
+  label2{
+      color: #08ffd1;
+      font-size: 17px;
+  }
+  #Uname{
+      width: 300px;
+      height: 30px;
+      border: none;
+      border-radius: 3px;
+      padding-left: 8px;
+  }
+  #Pass{
+      width: 300px;
+      height: 30px;
+      border: none;
+      border-radius: 3px;
+      padding-left: 8px;
+  
+  }
+  #log{
+      width: 300px;
+      height: 30px;
+      border: none;
+      border-radius: 17px;
+      padding-left: 7px;
+      color: blue;
+  
+  
+  }
+  span{
+      color: white;
+      font-size: 17px;
+  }
+  a{
+      float: right;
+      background-color: grey;
+  }
